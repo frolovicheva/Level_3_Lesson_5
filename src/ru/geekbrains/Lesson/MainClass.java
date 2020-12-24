@@ -1,8 +1,11 @@
 package ru.geekbrains.Lesson;
 
+import java.util.concurrent.CyclicBarrier;
+
 public class MainClass {
     public static final int CARS_COUNT = 4;
     public static void main(String[] args) {
+        CyclicBarrier preparation = new CyclicBarrier (CARS_COUNT);
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Подготовка!!!");
         Race race = new Race(new Road(60), new Tunnel(), new Road(40));
         Car[] cars = new Car[CARS_COUNT];
@@ -15,7 +18,4 @@ public class MainClass {
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка началась!!!");
         System.out.println("ВАЖНОЕ ОБЪЯВЛЕНИЕ >>> Гонка закончилась!!!");
     }
-
-
 }
-

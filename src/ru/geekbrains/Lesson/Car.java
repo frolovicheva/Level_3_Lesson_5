@@ -1,5 +1,7 @@
 package ru.geekbrains.Lesson;
 
+import java.util.concurrent.CyclicBarrier;
+
 public class Car implements Runnable {
     private static int CARS_COUNT;
     private Race race;
