@@ -1,5 +1,6 @@
 package ru.geekbrains.Lesson;
 
+
 public class Road extends Stage {
     public Road(int length) {
         this.length = length;

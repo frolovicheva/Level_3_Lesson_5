@@ -1,8 +1,12 @@
 package ru.geekbrains.Lesson;
 
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.Semaphore;
+
 public abstract class Stage {
     protected int length;
     protected String description;
+
     public String getDescription() {
         return description;
     }
